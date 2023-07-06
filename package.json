@@ -6,10 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "db-reset": "prisma migrate reset --skip-seed --force && prisma db push && prisma db seed",
+    "db:migrate":""
   },
   "dependencies": {
     "@next/font": "13.1.6",
+    "@prisma/client": "^4.16.2",
     "isotope-layout": "^3.0.6",
     "next": "13.1.6",
     "react": "18.2.0",
